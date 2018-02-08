@@ -1,0 +1,6 @@
+framework module Pods_Alarmo {
+  umbrella header "Pods-Alarmo-umbrella.h"
+
+  export *
+  module * { export * }
+}
