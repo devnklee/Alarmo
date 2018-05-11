@@ -9,7 +9,8 @@
 import Foundation
 import RealmSwift
 
-class AlarmItem : Object{
+class AlarmItem : Object {
+    
     @objc dynamic var address : String = ""
     @objc dynamic var lat : String = ""
     @objc dynamic var lon : String = ""

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -77,11 +78,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Alarmo" id="Blz-1m-msW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NOk-a9-dZh">
-                            <connections>
-                                <segue destination="xFr-6B-YCX" kind="show" id="I1F-bB-p9b"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="NOk-a9-dZh">
+                                <connections>
+                                    <segue destination="xFr-6B-YCX" kind="show" id="I1F-bB-p9b"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" id="9wG-X5-Snq">
+                                <connections>
+                                    <action selector="addalert:" destination="8iA-Pb-HRc" id="Nat-i6-A5K"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RI1-29-fcd" userLabel="First Responder" sceneMemberID="firstResponder"/>

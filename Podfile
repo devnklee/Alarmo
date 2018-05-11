@@ -10,6 +10,17 @@ target 'Alarmo' do
   pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'RealmSwift'
-  pod 'SwipeCellKit'
   
+
+
+
+
+  target 'NotificationExtension' do
+  	# Pods for NotificationExtension
+
+  	pod 'RealmSwift'
+  	pod 'SwiftyJSON'
+  	pod 'Alamofire'
+
+  end
 end

@@ -22,12 +22,18 @@ class AlarmDetailController : UIViewController {
     var lon : String = ""
     var isAddressSet = false
     
-    let days : [String] = ["월", "화", "수", "목", "금", "토", "일"]
+    let days : [String] = ["일","월", "화", "수", "목", "금", "토"]
     var selected : [Bool] = [false,false,false,false,false,false,false]
     
     let dateFormatter = DateFormatter()
     
-    let realm = try! Realm()
+    let fileURL = FileManager.default
+        .containerURL(forSecurityApplicationGroupIdentifier: "group.io.realm.app_group")!
+        .appendingPathComponent("default.realm")
+    lazy var config = {
+        return Realm.Configuration(fileURL: fileURL)}()
+    lazy var realm = {
+        return try! Realm(configuration: config)}()
     
     
     override func viewDidLoad() {
@@ -159,6 +165,7 @@ class AlarmDetailController : UIViewController {
 
 extension AlarmDetailController : UICollectionViewDelegate, UICollectionViewDataSource {
     
+    //Setting collection view for selecting repeatation.
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CollectionViewCell
