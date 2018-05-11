@@ -28,8 +28,8 @@
 		22E30F232036951600B25890 /* NotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22E30F152036951500B25890 /* NotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		22E30F282036C3CB00B25890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E243DB20257531003A16ED /* Assets.xcassets */; };
 		22EDB8552029815E00E90224 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDB8542029815E00E90224 /* CollectionViewCell.swift */; };
-		B5152616B2A7B706A5F58C18 /* Pods_Alarmo_NotificationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4224E2D690BB68691BB14B75 /* Pods_Alarmo_NotificationExtension.framework */; };
-		BB5E7846D4A2C1F886573496 /* Pods_Alarmo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11C73687574D3EC03C47136 /* Pods_Alarmo.framework */; };
+		53CAF844CADFC2E2939EA1A2 /* Pods_Alarmo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8912C52B7470504DAE9D622 /* Pods_Alarmo.framework */; };
+		FBAEC7482A6D94396922461B /* Pods_Alarmo_NotificationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC87648180E46EE76A96EA0 /* Pods_Alarmo_NotificationExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		081B1FC0E81931CAA7465114 /* Pods-Alarmo-NotificationExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmo-NotificationExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmo-NotificationExtension/Pods-Alarmo-NotificationExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		1A4703BF745A15ADD047BDF1 /* Pods-Alarmo-NotificationExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmo-NotificationExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmo-NotificationExtension/Pods-Alarmo-NotificationExtension.release.xcconfig"; sourceTree = "<group>"; };
 		2252C1ED203C155100FD956F /* Alarmo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alarmo.entitlements; sourceTree = "<group>"; };
 		2252C1EE203C170700FD956F /* NotificationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationExtension.entitlements; sourceTree = "<group>"; };
 		22B3AF662053C909007EFCD1 /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
@@ -79,12 +81,10 @@
 		22E30F1E2036951600B25890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		22E30F202036951600B25890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22EDB8542029815E00E90224 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		2C4F40882D293A325E9971B2 /* Pods-Alarmo-NotificationExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmo-NotificationExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmo-NotificationExtension/Pods-Alarmo-NotificationExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		307D10DB216FE229F3399DB0 /* Pods-Alarmo-NotificationExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmo-NotificationExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmo-NotificationExtension/Pods-Alarmo-NotificationExtension.release.xcconfig"; sourceTree = "<group>"; };
-		4224E2D690BB68691BB14B75 /* Pods_Alarmo_NotificationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarmo_NotificationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA324230A46E10AF929AF0BD /* Pods-Alarmo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmo/Pods-Alarmo.release.xcconfig"; sourceTree = "<group>"; };
-		D11C73687574D3EC03C47136 /* Pods_Alarmo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarmo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF476AF34D882969953F11A2 /* Pods-Alarmo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmo/Pods-Alarmo.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC87648180E46EE76A96EA0 /* Pods_Alarmo_NotificationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarmo_NotificationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CE9C962EF15DBF22370F76 /* Pods-Alarmo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmo/Pods-Alarmo.debug.xcconfig"; sourceTree = "<group>"; };
+		B8912C52B7470504DAE9D622 /* Pods_Alarmo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alarmo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63CA173CC3A157747807E08 /* Pods-Alarmo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarmo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarmo/Pods-Alarmo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5E7846D4A2C1F886573496 /* Pods_Alarmo.framework in Frameworks */,
+				53CAF844CADFC2E2939EA1A2 /* Pods_Alarmo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,13 +102,24 @@
 			files = (
 				22E30F192036951600B25890 /* UserNotificationsUI.framework in Frameworks */,
 				22E30F172036951600B25890 /* UserNotifications.framework in Frameworks */,
-				B5152616B2A7B706A5F58C18 /* Pods_Alarmo_NotificationExtension.framework in Frameworks */,
+				FBAEC7482A6D94396922461B /* Pods_Alarmo_NotificationExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0FA329E2595A76A8302B3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE9C962EF15DBF22370F76 /* Pods-Alarmo.debug.xcconfig */,
+				D63CA173CC3A157747807E08 /* Pods-Alarmo.release.xcconfig */,
+				081B1FC0E81931CAA7465114 /* Pods-Alarmo-NotificationExtension.debug.xcconfig */,
+				1A4703BF745A15ADD047BDF1 /* Pods-Alarmo-NotificationExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		22CE9D512033F5C2001B2840 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +135,8 @@
 				22E243D320257531003A16ED /* Alarmo */,
 				22E30F1A2036951600B25890 /* NotificationExtension */,
 				22E243D220257531003A16ED /* Products */,
-				CEC71B2A580F0A26D8C55F24 /* Pods */,
 				9B417942583959C6E2034781 /* Frameworks */,
+				1B0FA329E2595A76A8302B3A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,23 +199,12 @@
 		9B417942583959C6E2034781 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D11C73687574D3EC03C47136 /* Pods_Alarmo.framework */,
 				22E30F162036951500B25890 /* UserNotifications.framework */,
 				22E30F182036951600B25890 /* UserNotificationsUI.framework */,
-				4224E2D690BB68691BB14B75 /* Pods_Alarmo_NotificationExtension.framework */,
+				B8912C52B7470504DAE9D622 /* Pods_Alarmo.framework */,
+				4DC87648180E46EE76A96EA0 /* Pods_Alarmo_NotificationExtension.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CEC71B2A580F0A26D8C55F24 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EF476AF34D882969953F11A2 /* Pods-Alarmo.debug.xcconfig */,
-				AA324230A46E10AF929AF0BD /* Pods-Alarmo.release.xcconfig */,
-				2C4F40882D293A325E9971B2 /* Pods-Alarmo-NotificationExtension.debug.xcconfig */,
-				307D10DB216FE229F3399DB0 /* Pods-Alarmo-NotificationExtension.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,13 +214,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22E243E320257531003A16ED /* Build configuration list for PBXNativeTarget "Alarmo" */;
 			buildPhases = (
-				1A467B790E184D712A061604 /* [CP] Check Pods Manifest.lock */,
+				C6F3112829CAC47C81E3D89C /* [CP] Check Pods Manifest.lock */,
 				22E243CD20257531003A16ED /* Sources */,
 				22E243CE20257531003A16ED /* Frameworks */,
 				22E243CF20257531003A16ED /* Resources */,
-				8EE77820F6C4DFEC89046DD1 /* [CP] Embed Pods Frameworks */,
-				BCEC2233A150A3BB391BE912 /* [CP] Copy Pods Resources */,
 				22E30F272036951600B25890 /* Embed App Extensions */,
+				D49AA75020B5E638BBED956C /* [CP] Embed Pods Frameworks */,
+				47A54CE99B591F1518E10C3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,11 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22E30F262036951600B25890 /* Build configuration list for PBXNativeTarget "NotificationExtension" */;
 			buildPhases = (
-				C10682DAD79450E4942353D8 /* [CP] Check Pods Manifest.lock */,
+				D04439C133AEC56CEE1D6825 /* [CP] Check Pods Manifest.lock */,
 				22E30F112036951500B25890 /* Sources */,
 				22E30F122036951500B25890 /* Frameworks */,
 				22E30F132036951500B25890 /* Resources */,
-				988A1F5A9BF568D318AB1C47 /* [CP] Copy Pods Resources */,
+				9DEBE06C790C0A30321A2343 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,7 +323,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1A467B790E184D712A061604 /* [CP] Check Pods Manifest.lock */ = {
+		47A54CE99B591F1518E10C3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alarmo/Pods-Alarmo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DEBE06C790C0A30321A2343 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alarmo-NotificationExtension/Pods-Alarmo-NotificationExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F3112829CAC47C81E3D89C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,7 +371,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8EE77820F6C4DFEC89046DD1 /* [CP] Embed Pods Frameworks */ = {
+		D04439C133AEC56CEE1D6825 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alarmo-NotificationExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49AA75020B5E638BBED956C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,54 +411,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alarmo/Pods-Alarmo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		988A1F5A9BF568D318AB1C47 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alarmo-NotificationExtension/Pods-Alarmo-NotificationExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BCEC2233A150A3BB391BE912 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alarmo/Pods-Alarmo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C10682DAD79450E4942353D8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Alarmo-NotificationExtension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -590,7 +590,7 @@
 		};
 		22E243E420257531003A16ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF476AF34D882969953F11A2 /* Pods-Alarmo.debug.xcconfig */;
+			baseConfigurationReference = A4CE9C962EF15DBF22370F76 /* Pods-Alarmo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -608,7 +608,7 @@
 		};
 		22E243E520257531003A16ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA324230A46E10AF929AF0BD /* Pods-Alarmo.release.xcconfig */;
+			baseConfigurationReference = D63CA173CC3A157747807E08 /* Pods-Alarmo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -626,7 +626,7 @@
 		};
 		22E30F242036951600B25890 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C4F40882D293A325E9971B2 /* Pods-Alarmo-NotificationExtension.debug.xcconfig */;
+			baseConfigurationReference = 081B1FC0E81931CAA7465114 /* Pods-Alarmo-NotificationExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NotificationExtension/NotificationExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -643,7 +643,7 @@
 		};
 		22E30F252036951600B25890 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 307D10DB216FE229F3399DB0 /* Pods-Alarmo-NotificationExtension.release.xcconfig */;
+			baseConfigurationReference = 1A4703BF745A15ADD047BDF1 /* Pods-Alarmo-NotificationExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NotificationExtension/NotificationExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
