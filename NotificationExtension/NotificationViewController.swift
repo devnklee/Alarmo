@@ -16,7 +16,6 @@ import SwiftyJSON
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
     
     @IBOutlet weak var weatherTemp: UILabel!
-    @IBOutlet weak var weatherMaxMin: UILabel!
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var weatherCondition: UILabel!
     
@@ -101,6 +100,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         
     }
     func getDustData(url: String, parameters: [String: String]){
+        
         Alamofire.request(url, method: .get, parameters: parameters).responseJSON { (response) in
             if response.result.isSuccess {
                 let dustJSON : JSON = JSON(response.result.value!)
@@ -143,7 +143,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
                         
                     }
                     
-                    self.updateContentWithWeatherData()
+                   self.updateContentWithWeatherData()
                 }
                 
             }else {
@@ -160,21 +160,20 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         
         weatherIcon.image = UIImage(named: image)
         weatherTemp.text = "\(weatherModel.temperature)°"
-        weatherMaxMin.text = "↓ \(weatherModel.tempMin)° ↑ \(weatherModel.tempMax)°"
         weatherCondition.text = weatherModel.condition
-        
-        //day1.text = weatherModel.forecast[0].day
+
+        day1.text = weatherModel.forecast[0].day
         day2.text = weatherModel.forecast[1].day
         day3.text = weatherModel.forecast[2].day
         day4.text = weatherModel.forecast[3].day
         day5.text = weatherModel.forecast[4].day
-        
+
         day1Temp.text = "↓ \(weatherModel.forecast[0].tempLow)° ↑ \(weatherModel.forecast[0].tempHigh)°"
         day2Temp.text = "↓ \(weatherModel.forecast[1].tempLow)° ↑ \(weatherModel.forecast[1].tempHigh)°"
         day3Temp.text = "↓ \(weatherModel.forecast[2].tempLow)° ↑ \(weatherModel.forecast[2].tempHigh)°"
         day4Temp.text = "↓ \(weatherModel.forecast[3].tempLow)° ↑ \(weatherModel.forecast[3].tempHigh)°"
         day5Temp.text = "↓ \(weatherModel.forecast[4].tempLow)° ↑ \(weatherModel.forecast[4].tempHigh)°"
-        
+
         day1Condition.text = weatherModel.forecast[0].condition
         day2Condition.text = weatherModel.forecast[1].condition
         day3Condition.text = weatherModel.forecast[2].condition

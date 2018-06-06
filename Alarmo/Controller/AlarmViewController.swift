@@ -167,7 +167,7 @@ class AlarmViewController: UITableViewController, UNUserNotificationCenterDelega
     
     @IBAction func addalert(_ sender: UIBarButtonItem) {
         let content = UNMutableNotificationContent()
-        content.title = "대한민국 서울특별시 서대문구 미근동"
+        content.title = "대한민국 서울특별시 마포구 아현동"
         content.body = "Testing notification"
         content.categoryIdentifier = "Alarmo"
         
@@ -183,6 +183,8 @@ class AlarmViewController: UITableViewController, UNUserNotificationCenterDelega
         
         
         if let item = alarmList?.first {
+            
+            //testing weather api
             let lat = item.lat
             let lon = item.lon
             let q = "select * from weather.forecast where woeid in (SELECT woeid FROM geo.places WHERE text=\"(\(lat),\(lon))\") and u=\"c\""
@@ -190,10 +192,10 @@ class AlarmViewController: UITableViewController, UNUserNotificationCenterDelega
             
            getWeatherData(url: WEATHER_URL, parameters: params)
             
-            
-            let url = "\(DUST_URL)\(lat);\(lon)/"
-            let param2 : [String : String] = ["token" : DUST_API_KEY]
-            getWeatherData(url: url, parameters: param2)
+            //testing dust api
+//            let url = "\(DUST_URL)\(lat);\(lon)/"
+//            let param2 : [String : String] = ["token" : DUST_API_KEY]
+//            getWeatherData(url: url, parameters: param2)
         }
         
     }
@@ -206,11 +208,27 @@ class AlarmViewController: UITableViewController, UNUserNotificationCenterDelega
                 
                 let weatherJSON : JSON = JSON(response.result.value!)
                 
-                //print(weatherJSON)
+              //  print(weatherJSON)
                 
                 
-                if let pm25 = weatherJSON["data"]["iaqi"]["pm25"]["v"].stringValue as String?{
-                   print(pm25)
+                if let temp = weatherJSON["query"]["results"]["channel"]["item"]["condition"]["temp"].stringValue as String? {
+                    print(temp)
+                    print(weatherJSON["query"]["results"]["channel"]["item"]["forecast"][0]["high"].stringValue)
+                    print(weatherJSON["query"]["results"]["channel"]["item"]["forecast"][0]["low"].stringValue)
+                    print(weatherJSON["query"]["results"]["channel"]["item"]["condition"]["text"].stringValue)
+                    print(weatherJSON["query"]["results"]["channel"]["item"]["condition"]["code"].intValue)
+
+                    for i in 0...4 {
+                        print("-----\(i)-----")
+                        print(weatherJSON["query"]["results"]["channel"]["item"]["forecast"][i]["day"].stringValue)
+                        print(weatherJSON["query"]["results"]["channel"]["item"]["forecast"][i]["low"].stringValue)
+                        print(weatherJSON["query"]["results"]["channel"]["item"]["forecast"][i]["high"].stringValue)
+                        print(weatherJSON["query"]["results"]["channel"]["item"]["forecast"][i]["code"].intValue)
+                        print(weatherJSON["query"]["results"]["channel"]["item"]["forecast"][i]["text"].stringValue)
+                        
+
+                    }
+                    
                 }
             }
         }
